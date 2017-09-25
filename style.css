@@ -1,8 +1,12 @@
 <style>
+#hName{
+	text-align: left;
+	background-color: blue;
 
-.plink
-{
+}
 
+.pLink{
+	text-align: right;
 }
 
 
