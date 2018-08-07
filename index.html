@@ -1,118 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The Kyle O'Connor</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+<head>
+	<title>The Kyle O'Connor</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-  <body>
+<body>
 
-    <div id="header">  
-      <ul>
-        <li style="float: left; margin-left: 10px"><a href="index.html">Kyle O'Connor</a></li>
-        <li style="float: left"><img id="icon" src="imgs/icon.JPG"></li>
-        <li><a href="resume_contactForm.html">Resume</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="workExp.html">Experience</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </div>
+	<div id="header">  
+		<ul class="header">
+			<li style="float: left; margin-left: 10px" class="header"><a class="header" href="index.html">Kyle O'Connor</a></li>
+			<li class="header" style="float: left"><img id="icon" src="imgs/icon.JPG"></li>
+			<li class="header" onclick="scrollToTech()"><a class="header">Technical_Skills</a></li>
+			<li class="header" onclick="scrollToExp()"><a class="header">Experience</a></li>
+			<li class="header" onclick="scrollToHome()"><a class="header">Home</a></li>
+		</ul>
+	</div>
 
-    <div class="containerTop">
-      <img id="meinParkTop" src="https://farm1.staticflickr.com/549/30918710113_f12f5f6e7f_k.jpg" alt="Me in Cle">
-      <span id="introName">Hi, It's Me Kyle!</span>
-    </div>
+	<div class="containerTop">
+		<img id="meinParkTop" src="https://farm1.staticflickr.com/339/31613160711_5e960626ff_z.jpg" alt="Me in Cle">
+		<span id="introName">Hi, It's Me Kyle!</span>
+	</div>
 
-    <div class="blockp1">
-      <h1 id="introAbout">Creative, curious, and inovative software developer</h1><img id="picMe" src="imgs/itsme.JPG" alt="It's Me!"></br></br></br></br>
-      <hr noshade size="5px" width="15%" style="float: left; margin-left: 7%;"></br>
-      <br/>
-      <h2 class="subPassage"><b>I'm a a third year student</b> at the University of Cincinnati in Ohio. I am a computer science major and love learning new things. I have a passion for technology and building beautful application with code. I have a knack for being creative with everything I do so I can add my own unique touch to the world around me.</br></br><b> I love learning</b> about new ways to interact with technology and improve how I build software applications. I take every opportunity I can to learn from work and school. I thrive in a collaborative environment where ideas flow and grow. I have learned a lot in my academic and professional experience, and strive to continue doing so.<br><br>
-      <b>When I'm not busy learning</b>, I spend my time running, reading, traveling, and playing board games.</h2>
-      <br><br>
-    </div>
-    
-    <div class="blockp2">
-      <h1 id="expIntro">My Journey</h1>
-      <h2 style="text-align: center; color: white;"> Take a look at how I got to where I am now.</br> This time map shows my journey so far in becoming a software developer.</br> This timeline shows my academic and industry experience.</h2></br>
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2><b>August 2015  -  Present</b></h2>
-            <h4 style="color: #4ABDAC;">University of Cincinnati</h4>
-            <p>Enrolled at the University of Cincinnati College of Engineering and Applied Science. Bachelor of Science in Computer Science.<b> Graduating in May 2020</b></p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2><b>February 2016  -  April 2016</b></h2>
-            <h4 style="color: #4ABDAC;">SWOP Cinci Startup Intern</h4>
-            <p>SWOP was a startup focused on building an eCommerce iPhone application. I mainly worked in Xcode on app constraints. This was an unpaid internship, but it was my first taste of professional experience.</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2><b>August 2016  -  December 2016</b></h2>
-            <h4 style="color: #4ABDAC;">Computer Science/Engineering Co-op at Diebold Nixdorf</h4>
-            <p>I did my first co-op rotation at Diebold Nixdorf. They are the a leader in ATM manufacturing. I worked for the Logical Security Team. I focused heavily on .NET applications that measured the security of ATM processors. I mostly debugged and updated tools and utilities that interacted with the processors. </p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2><b>May 2017  -  August 2017</b></h2>
-            <h4 style="color: #4ABDAC;">Computer Science/Engineering Co-op at Diebold Nixdorf</h4>
-            <p>My second semester at Diebold Nixdorf I worked again with the Logical Security Team. This semester rotation I was a part of three seperate projects. One project that I worked on was developing features for a company site. The site was built in MVC framework with C#.NET, html, css, and javascript/jquery. Another project was setting up a test environment for new security software on a full ATM. This project let me experience collaborating with other teams. The third project was working with  </p>
-          </div>
-        </div>
-        <div>
-          <div class="container left">
-            <div  class="content">
-              <h2><b>February 2018  -  Present</b></h2>
-              <h4 style="color: #4ABDAC;">Cincinnati Insurance Companies - UC Tester Intern</h4>
-              <p>This part time internship has shown me the testing side of Software. All of the testing was done on a company website. I used HP-ALM to run tests through servers on VNC Viewer. IBM Raional Doors was a requirement management tool I used to keep track of software requirements. This internship has really given me a deeper look into the testing and requirements side of the software lifecycle.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <span style="bottom: 14%; right: 9%;" id="comingSoonLabel">Coming Soon - Summer 2018</span>
-          <div style="filter: blur(5px)" class="container right">
-            <div class="content">
-              <h2><b>January 2018  -  Present</b></h2>
-              <h4 style="color: #4ABDAC;">Cincinnati Insurance Companies - UC Tester Intern</h4>
-              <p>SWOP was a startup focused on building an eCommerce iPhone application. I mainly worked in Xcode on app constraints. This was an unpaid internship, but it was my first taste of professional experience.</p>
-            </div>
-          </div>
-        </div>
-        </br></br></br></br></br></br></br></br></br>
-      </div>
-    </div>
+	<div class="blockp1">
+		<h1 id="introAbout">Creative, curious, and innovative software developer</h1><img id="picMe" src="imgs/itsme.JPG" alt="It's Me!"></br></br></br></br>
+		<hr noshade size="5px" width="15%" style="float: left; margin-left: 7%;"></br>
+		<br/>
+		<h2 class="subPassage"><b>I'm a fourth year undergraduate - first year graduate student</b> at the University of Cincinnati in Ohio. I am a currently pursuing my BS and MS in computer science. I am always trying to learn new things. I have a passion for technology and building meaningful applications with code. I have a knack for being creative with everything I do so I can add my own unique touch to the world around me.</br></br><b> Like I said, I love learning</b>  and finding new ways to interact with technology and improve how I build software. I take every opportunity I can to learn from work and school. I thrive in a collaborative environment where ideas flow and grow. I have learned a lot in my academic and professional experience, and strive to continue doing so.<br><br>
+		<b>When I'm not busy learning</b>, I spend my time running, reading, traveling, and playing board games.</h2>
+			<br><br>
+		</div>
 
-    
-    <div class="blockp3">
-      <br/>
-      <h1 style="font-size: 400%">My Work</h1>
-      <div class="worklogo">
-        <img id="cpppic" src="imgs/cpplogo.png">
-        <p>My C++ experience can be summed up as classwork done in a collaborative environment. Meaning everyone contributed to the goal of finishing each project/lab. The coolest thing we got to work on was our own rendition of a B-Tree template. Go check out the <a href="https://github.com/Evan-Akers/DataStructures/blob/master/Lab10/BTree.h" target="_blank">repository!</a></p> 
-      </div>
-      <div class="worklogo">
-        <img id="pypic" src="imgs/pythonlogo.png">
-        <p>One of the coolest things I have done so far was use the Tweepy Twitter API to create a twitter bot. This bot used a Markovian dictionary to store word strings. It was an awesome experience to work on a project that interacted with and collected data from Twitter! Check it out <a href="https://github.com/SavedThunder/PyClass/tree/master/PythonTweetGen" target="_blank">here</a>.</p>
-      </div>
-      <div class="worklogo">
-        <img id="mlabpic" src="imgs/matlablogo.png">
-        <p>As for modeling and simulation, I have a plethora of academic experience with MATLAB. One project was calculating the forces acting on plane and submarine doors to tell if they would hold at a certain depth/altitude. Although the coding isn't as rigorous, the engineering behind it is complex. Check out the reposityory <a href="https://github.com/SavedThunder/MATLAB-stuff/blob/master/Models%202/Models%20Labs/Models2Lab9.m" target="_blank">here</a>! </p>
-      </div>
-    </div>
+		<div class="blockp2">
+			<h1 id="expIntro">My Journey</h1>
+			<h2 style="text-align: center; color: white;"> Take a look at how I got to where I am now.</br> This time map shows my journey so far in becoming a software developer.</br> This timeline shows my academic and industry experience.</h2></br>
+			<div class="timeline">
+				<div class="container left">
+					<div class="content">
+						<h2><b>August 2015  -  Present</b></h2>
+						<h4 style="color: #4ABDAC;">University of Cincinnati</h4>
+						<p>Enrolled at the University of Cincinnati College of Engineering and Applied Science. Bachelor of Science in Computer Science.<b> Graduating in May 2020</b></p>
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<h2><b>February 2016  -  April 2016</b></h2>
+						<h4 style="color: #4ABDAC;">SWOP Cinci Startup Intern</h4>
+						<p>SWOP was a startup focused on building an eCommerce iPhone application. I mainly worked in Xcode on app constraints. This was an unpaid internship, but it was my first taste of professional experience.</p>
+					</div>
+				</div>
+				<div class="container left">
+					<div class="content">
+						<h2><b>August 2016  -  December 2016</b></h2>
+						<h4 style="color: #4ABDAC;">Computer Science/Engineering Co-op at Diebold Nixdorf</h4>
+						<p>I did my first co-op rotation at Diebold Nixdorf. They are the a leader in ATM manufacturing. I worked for the Logical Security Team. I focused heavily on .NET applications that measured the security of ATM processors. I mostly debugged and updated tools and utilities that interacted with the processors. </p>
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<h2><b>May 2017  -  August 2017</b></h2>
+						<h4 style="color: #4ABDAC;">Computer Science/Engineering Co-op at Diebold Nixdorf</h4>
+						<p>My second semester at Diebold Nixdorf I worked again with the Logical Security Team. This semester rotation I was a part of three seperate projects. One project that I worked on was developing features for a company site. The site was built in MVC framework with C#.NET, html, css, and javascript/jquery. Another project was setting up a test environment for new security software on a full ATM. This project let me experience collaborating with other teams. The third project was working with  </p>
+					</div>
+				</div>
+				<div>
+					<div class="container left">
+						<div  class="content">
+							<h2><b>February 2018  -  April 2018</b></h2>
+							<h4 style="color: #4ABDAC;">Cincinnati Insurance Companies - UC Tester Intern</h4>
+							<p>This part time internship has shown me the testing side of Software. All of the testing was done on a company website. I used HP-ALM to run tests through servers on VNC Viewer. IBM Raional Doors was a requirement management tool I used to keep track of software requirements. This internship has really given me a deeper look into the testing and requirements side of the software lifecycle.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="container right">
+						<div class="content">
+							<h2><b>May 2018  -  August 2018</b></h2>
+							<h4 style="color: #4ABDAC;">Vantiv, now Worldpay - Enterprise Developer Intern</h4>
+							<p>This was a full time internship where I worked in the Enterprise Data Train specifically under the Platform and Tooling team. I learned a lot about the backend architecture of the various platforms Worldpay develops/supports for their clients. I performed patching and upgrade installations as well as troubleshooting these activities. I also researched and developed on these platforms to inform/enable users on the platform.
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="container left">
+						<div class="content">
+							<h2><b>Fall 2018 - Present</b></h2>
+							<h4 style="color: #4ABDAC;">University of Cincinnati</h4>
+							<p>Enrolled in the ACCEND program at the University of Cincinnati College of Engineering and Applied Science. Masters of Science in Computer Science.<b> Graduating in May 2020</b></p>
+						</div>
+					</div>
+				</div>
+				</br></br></br></br></br></br></br></br></br>
+			</div>
+		</div>
 
-    <p>Go check out my Linkedin™ and my Github™ pages!
-    <br/>
-    <div>
-      <a href="https://github.com/SavedThunder" target="_blank"><img id="ghubPic" height= "205px" width="500px" src="imgs/GitHub_Logo.png"></a>
-    </div>
-    <div>
-      <a href="https://www.linkedin.com/in/thekyleoconnor/" target="_blank"><img id="inPic" src="imgs/LinkedIn Logo for Screen/2-Color/Logo-2C-128px-TM.png"></a>
-    </div>
-  </body>
+		<br><br><br>
+		<div id="techSkills">
+			<hr width="75%">
+			<div class="skillsTable"></div>
+			<h1 id="skillsHead">Skills</h1>
+			<div class="category" style="margin-left: 20%;">
+				<div class="tableLabel"><b>Development</b></div>
+				<ul style="list-style-type: none">
+					<li>C++</li>
+					<li>C# .NET</li>
+					<li>Python</li>
+					<li>Java</li>
+					<li>Javascript</li>
+					<li>HTML/CSS</li>
+					<li>SQL</li>
+					<li>Matlab</li>
+				</ul>
+			</div>
+			<div class="category">
+				<div class="tableLabel"><b>Tools</b></div>
+				<ul style="list-style-type: none">
+					<li>Visual Studio</li>
+					<li>Eclipse</li>
+					<li>PyCharm</li>
+					<li>Git & Github</li>
+					<li>SQL Server Management Studio</li>
+					<li>Wordpress</li>
+					<li>HP - ALM</li>
+				</ul>
+			</div>
+			<div class="category">
+				<div class="tableLabel"><b>Knowledge</b></div>
+				<ul style="list-style-type: none">
+					<li>Agile Development</li>
+					<li>Refactoring Techniques</li>
+					<li>UML Diagrams</li>
+					<li>Testing (BBT/WBT)</li>
+					<li>Software Processes</li>
+					<li>Software Architecture</li>
+				</ul>
+			</div>
+		</div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="blockp3" style="margin-top: 5%;">
+	<br/>
+	<h1 style="font-size: 400%">My Work</h1>
+	<div class="worklogo">
+		<img id="cpppic" src="imgs/cpplogo.png">
+		<p>My C++ experience can be summed up as classwork done in a collaborative environment. Meaning everyone contributed to the goal of finishing each project/lab. The coolest thing we got to work on was our own rendition of a B-Tree template. Go check out the <a href="https://github.com/Evan-Akers/DataStructures/blob/master/Lab10/BTree.h" target="_blank">repository!</a></p> 
+	</div>
+	<div class="worklogo">
+		<img id="pypic" src="imgs/pythonlogo.png">
+		<p>One of the coolest things I have done so far was use the Tweepy Twitter API to create a twitter bot. This bot used a Markovian dictionary to store word strings. It was an awesome experience to work on a project that interacted with and collected data from Twitter! Check it out <a href="https://github.com/SavedThunder/PyClass/tree/master/PythonTweetGen" target="_blank">here</a>.</p>
+	</div>
+	<div class="worklogo">
+		<img id="mlabpic" src="imgs/matlablogo.png">
+		<p>As for modeling and simulation, I have a plethora of academic experience with MATLAB. One project was calculating the forces acting on plane and submarine doors to tell if they would hold at a certain depth/altitude. Although the coding isn't as rigorous, the engineering behind it is complex. Check out the reposityory <a href="https://github.com/SavedThunder/MATLAB-stuff/blob/master/Models%202/Models%20Labs/Models2Lab9.m" target="_blank">here</a>! </p>
+	</div>
+</div>
+
+<p><b>Go check out my Linkedin™ and my Github™ pages!</b></p>
+	<div>
+		<a href="https://github.com/SavedThunder" target="_blank"><img id="ghubPic" height= "10%" width="10%" src="imgs/GitHub_Logo.png"></a>
+	</div>
+	<div style="margin-top: 27.5px">
+		<a href="https://www.linkedin.com/in/thekyleoconnor/" target="_blank"><img id="inPic" height= "10%" width="10%" src="imgs/LinkedIn Logo for Screen/2-Color/Logo-2C-128px-TM.png"></a>
+	</div>
+</body>
+<script type="text/javascript">
+	function scrollToExp(){
+		var elmnt = document.getElementById("expIntro");
+		elmnt.scrollIntoView();
+	};
+	function scrollToHome(){
+		var elmnt = document.getElementById("introName");
+		elmnt.scrollIntoView();
+	};
+	function scrollToTech(){
+		var elmnt = document.getElementById("techSkills");
+		elmnt.scrollIntoView();
+	};
+</script>
 </html>

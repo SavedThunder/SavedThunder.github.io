@@ -31,8 +31,14 @@ body{
     height:3.6em;
     margin-top: 1%;
 }
+#ghub{
+    opacity: 0%;
+    margin-bottom: 1%;
+    width:4em;
+    height:3.6em;
+}
 
-ul {
+ul.header {
 	height: 75px;
     list-style-type: none;
     margin: 0;
@@ -41,11 +47,11 @@ ul {
     background-color: #333;
 }
 
-li {
+li.header {
     float: right;
 }
 
-li a {
+li a.header {
 	height: 45px;
     display: block;
     color: white;
@@ -57,7 +63,7 @@ li a {
     transition: font-size 0.5s;
 }
 
-li a:hover {
+li a.header:hover {
     color: #4ABDAC;
     font-size: 1.15em;
 }
@@ -267,6 +273,27 @@ li a:hover {
     z-index: 2;
 }
 
+
+.skillTable{
+
+    margin: auto;
+    overflow: hidden;;
+    width: 75%;
+    height: 200px;
+}
+
+.category{
+    width:25%;
+    float: left;
+    overflow: auto;
+}
+
+#skillsHead{
+    margin-top: 5%;
+    margin-left: 15%;
+    color: #4ABDAC;
+}
+
 .blockp2{
     background-color: #333333;
     padding-top: 5%;
@@ -322,12 +349,11 @@ li a:hover {
 }
 
 #ghubPic{
-    float:right;
-    display: inline;
+    float:left;
 }
 #inPic{
     float:left;
-    display: inline;
+    
 }
 /*About Me*/
 a.button{
