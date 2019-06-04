@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Kyle O'Connor</title>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -12,16 +11,16 @@
 
 <body>
 
-	<div id="header">  
-		<ul class="header">
-			<li style="float: left; margin-left: 10px" class="header"><a class="header" href="index.html">Kyle O'Connor</a></li>
-			<li class="header" style="float: left"><img id="icon" src="imgs/icon.JPG"></li>
-			<li class="header" onclick="scrollToTech()"><a class="header">Technical_Skills</a></li>
-			<li class="header" onclick="scrollToExp()"><a class="header">Experience</a></li>
-			<li class="header" onclick="scrollToHome()"><a class="header">Home</a></li>
-		</ul>
-	</div>
-
+<div id="header">
+	<ul id="navun">
+		<li class="navitem" style="float:left"><a class="nitxt" href="index.html">Kyle O'Connor</a></li>
+		<li class="navitem" style="float:left"><img id="icon" src="imgs/icon.JPG"></li>
+		<li class="navitem" style="float:right"><a class="nitxt">Technical_Skills</a></li>
+		<li class="navitem" style="float:right"><a class="nitxt">Experience</a></li>
+		<li class="navitem" style="float:right"><a class="nitxt">Home</a></li>
+	</ul>
+</div>
+<!--
 	<div class="containerTop">
 		<img id="meinParkTop" src="https://farm1.staticflickr.com/339/31613160711_5e960626ff_z.jpg" alt="Me in Cle">
 		<span id="introName">Hi, It's Me Kyle!</span>
@@ -34,7 +33,7 @@
 		<h2 class="subPassage"><b>I'm a fourth year undergraduate - first year graduate student</b> at the University of Cincinnati in Ohio. I am a currently pursuing my BS and MS in computer science. I am always trying to learn new things. I have a passion for technology and building meaningful applications with code. I have a knack for being creative with everything I do so I can add my own unique touch to the world around me.</br></br><b> Like I said, I love learning</b>  and finding new ways to interact with technology and improve how I build software. I take every opportunity I can to learn from work and school. I thrive in a collaborative environment where ideas flow and grow. I have learned a lot in my academic and professional experience, and strive to continue doing so.<br><br>
 		<b>When I'm not busy learning</b>, I spend my time running, reading, traveling, and playing board games.</h2>
 			<br><br>
-		</div>
+	</div>
 
 		<div class="blockp2">
 			<h1 id="expIntro">My Journey</h1>
@@ -172,6 +171,7 @@
 		<a href="https://www.linkedin.com/in/thekyleoconnor/" target="_blank"><img id="inPic" height= "10%" width="10%" src="imgs/LinkedIn Logo for Screen/2-Color/Logo-2C-128px-TM.png"></a>
 	</div>
 </body>
+-->
 <script type="text/javascript">
 	function scrollToExp(){
 		var elmnt = document.getElementById("expIntro");
@@ -186,4 +186,5 @@
 		elmnt.scrollIntoView();
 	};
 </script>
+
 </html>
