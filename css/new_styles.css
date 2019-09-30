@@ -1,0 +1,23 @@
+.landing{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#landing-pic{
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 40%;
+    border: solid black 2.5px;
+    align-self: center;
+    margin-left: 15%;
+    /* margin-right: 15%; */
+    margin-top: 8%
+}
+
+#intro{
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 50%;
+    /* margin */
+}

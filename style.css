@@ -111,8 +111,8 @@ li a.header:hover {
     font-weight:bold;
     text-align: center;
     position: absolute;
-    bottom: 1%;
-    left: 7%;
+    bottom: 10%;
+    left: 9%;
     z-index: 2;
 }
 
